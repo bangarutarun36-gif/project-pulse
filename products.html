@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Products - Project Pulse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Project Pulse</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="todo.html">To-Do List</a></li>
+        <li><a href="products.html">Products</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h2>Product Listing</h2>
+
+  <div class="filters">
+    <label>
+      Filter by Category:
+      <select id="categoryFilter">
+        <option value="all">All</option>
+        <option value="electronics">Electronics</option>
+        <option value="men">Men</option>
+        <option value="women">Women</option>
+        <option value="kids">Kids</option>
+      </select>
+    </label>
+
+    <label>
+      Sort by Price:
+      <select id="priceSort">
+        <option value="none">None</option>
+        <option value="asc">Low to High</option>
+        <option value="desc">High to Low</option>
+      </select>
+    </label>
+
+    <label>
+      Price Range (₹):
+      <input type="range" id="priceRange" min="0" max="50000" value="50000">
+      <div class="range-value">₹<span id="priceValue">50000</span></div>
+    </label>
+  </div>
+
+   <div class="products-grid" id="productList"></div>
+
+
+  <script src="products.js"></script>
+</body>
+</html>
